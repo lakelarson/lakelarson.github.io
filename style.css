@@ -36,6 +36,20 @@ border-radius: 5px; /* Optional: round the corners */
 padding: 2px; /* Optional: add some padding */
 background-color: rgba(13, 225, 80, 0.4); /* Optional: translucent background */
 }
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(44, 62, 80, 0.8);
+    text-align: center;
+    padding: 10px 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: flex-end; /* Align items to the right */
+    gap: 5px; /* Add spacing between links */
+}
+
 
 nav a {
     color: #dbdbdb;
