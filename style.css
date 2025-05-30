@@ -1,63 +1,75 @@
+/* Base Styles */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f9f9f9;
     color: #333;
+    overflow-x: hidden;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+/* Header Styles */
 header {
-    background-color: #2c3e50;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url("img/Me.JPEG"); /* Replace with your image URL */
+    background-size: cover;
+    background-position: center;
     color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
     padding: 50px 20px;
 }
 
 header h1 {
     font-size: 3em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
+/* Navigation */
 nav {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     background-color: rgba(44, 62, 80, 0.8);
-    text-align: center;
-    padding: 10px 0;
-    z-index: 1000;
     display: flex;
-    justify-content: flex-end; /* Align items to the right */
-    gap: 5px; /* Add spacing between links */
-}
-nav a.active {
-border: 2px solid #7f7f7f; /* Change to your desired color */
-border-radius: 5px; /* Optional: round the corners */
-padding: 2px; /* Optional: add some padding */
-background-color: rgba(13, 225, 80, 0.4); /* Optional: translucent background */
-}
-nav {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: rgba(44, 62, 80, 0.8);
-    text-align: center;
-    padding: 10px 0;
+    justify-content: flex-end;
+    gap: 10px;
+    padding: 10px 20px;
     z-index: 1000;
-    display: flex;
-    justify-content: flex-end; /* Align items to the right */
-    gap: 5px; /* Add spacing between links */
+    flex-wrap: wrap;
 }
-
 
 nav a {
     color: #dbdbdb;
-    margin: 0 15px;
     text-decoration: none;
     font-size: 1.2em;
+    padding: 5px 10px;
+    transition: background 0.3s, color 0.3s;
 }
 
+nav a.active {
+    border: 2px solid #7f7f7f;
+    border-radius: 5px;
+    background-color: rgba(13, 225, 80, 0.4);
+}
+
+nav a:hover,
+nav a:focus {
+    color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.1);
+    outline: none;
+}
+
+/* Section Layout */
 section {
     padding: 60px 20px;
     max-width: 1000px;
@@ -72,12 +84,14 @@ section {
 }
 
 h2 {
+    margin-top: 40px;
     font-size: 2.5em;
     border-bottom: 3px solid #2c3e50;
     display: inline-block;
     margin-bottom: 30px;
 }
 
+/* Experience, Projects, Education, Skills */
 .experience, .projects, .education, .skills {
     margin-top: 50px;
 }
@@ -88,6 +102,7 @@ h2 {
     margin-bottom: 20px;
 }
 
+/* Skills List */
 .skills ul {
     list-style-type: none;
     padding: 0;
@@ -102,6 +117,7 @@ h2 {
     border-radius: 5px;
 }
 
+/* Footer */
 footer {
     background-color: #2c3e50;
     color: white;
@@ -113,6 +129,7 @@ footer p {
     font-size: 1.1em;
 }
 
+/* Forms */
 input, textarea {
     width: 100%;
     padding: 15px;
@@ -128,30 +145,32 @@ button {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    font-size: 1em;
 }
 
 button:hover {
     background-color: #2980b9;
 }
 
-/* Command prompt style box */
+/* Command Prompt Style Box */
 #commandPrompt {
     background-color: black;
     color: white;
     padding: 15px;
     font-size: 1.2em;
     border-radius: 5px;
-    border: 2px solid #959595; /* Add border */
-    width: 500px;
+    border: 2px solid #959595;
+    width: 90%;
+    max-width: 500px;
     position: absolute;
-    top: 250px; /* Adjust this value to lower the box */
+    top: 250px;
     left: 50%;
     transform: translateX(-50%);
     z-index: 1000;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
-
+/* Blinking Cursor */
 .cursor {
     border-left: 2px solid white;
     animation: blink 0.7s steps(1) infinite;
@@ -163,44 +182,47 @@ button:hover {
     }
 }
 
-/* Hide prompt on scroll */
+/* Hide Element Utility */
 .hide {
     display: none;
 }
 
-body {
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden; /* Prevent horizontal scrolling */
-}
+/* Responsive Media Queries */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2em;
+        padding: 0 10px;
+    }
 
-header {
-    position: relative;
-    width: 100%;
-    height: 100vh; /* Full height */
-    background-image: url("img/Me.JPEG"); /* Replace with your image URL */
-    background-size: cover; /* Cover the entire header */
-    background-position: center; /* Center the image */
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-}
+    nav {
+        justify-content: center;
+        gap: 10px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        font-size: 1em;
+    }
 
-h1 {
-    font-size: 3em;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Optional shadow for better visibility */
-}
+    nav a {
+        font-size: 1em;
+        padding: 5px 8px;
+    }
 
-/* Content Section */
-.content {
-    padding: 20px;
-    background-color: #f9f9f9; /* Light background for content */
-    min-height: 100vh; /* Ensures content takes at least full viewport height */
-}
+    section {
+        padding: 40px 15px;
+    }
 
-h2 {
-    margin-top: 40px;
-    font-size: 2.5em;
+    .skills li {
+        padding: 8px;
+        font-size: 0.9em;
+    }
+
+    button {
+        width: 100%;
+        padding: 12px;
+    }
+
+    #commandPrompt {
+        top: 200px;
+        font-size: 1em;
+    }
 }
