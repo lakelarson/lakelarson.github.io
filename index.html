@@ -1,182 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="style.css">
-        <title>Lake Larson</title>
-        <nav>
-            <a href="#about">About</a>
-            <a href="#experience">Experience</a>
-            <a href="#projects">Projects</a>
-            <a href="#education">Education</a>
-            <a href="#skills">Skills</a>
-            <a href="#contact">Contact</a>
-            <a href="files/Resume.pdf" class="active" target="_blank">Resume</a>
-        </nav>
-    </head>
+<head>
+  <meta charset="UTF-8">
+  <title>Lake Larson</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-    <!--- Header Image -->
-    <header></header>
-    <body>    
-        <!-- Command Prompt Box -->
-        <div id="commandPrompt">
-            <p id="output"></p>
-        </div>
+  <header>
+    <h1>Lake Larson</h1>
+    <p>Aerospace Engineer | CFD Enthusiast | Materials Nerd</p>
+  </header>
 
-        <section id="about" class="intro">
-            <h2>About Me</h2>
-            <p> I am Lake Larson, an Eagle Scout and Senoir in Aerospace Engineering at The University of Alabama, Roll Tide! I am actively seeking an internship for the summer of 2025. My passions lie in materials science and computer simulations (CFD), and I have hands-on experience in both areas, as highlighted below. I am an active member of my school's Formula SAE chapter, where I spend most of my free time designing and manufacturing the next year's car. Please feel free to explore my website, and don't hesitate to reach out if you have any questions!</p>
-        </section>
+  <nav>
+    <ul>
+      <li><a href="#about">About Me</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
 
-        <section id="experience" class="experience">
-            <h2>Professional Experience</h2>
-            <h3>Flight Test Structures and Dynamics Intern: Lockheed Martin RMS (Sikorsky)</h3>
-            <p>Currently an intern for Sikorsky's flight test facility in Jupiter, FL where I Assist in processing and analyzing flight test data to extract key performance metrics. </p>
-            <h3>Thermo Structural Systems Co-op: Kratos Defense & Security Solutions (May 2024 - May 2025)</h3>
-            <p>I Design, conduct, monitor, and troubleshoot hundreds of material property tests to meet customers’ data requirements, ensuring precise results that meet high industry standards and align with client expectations. During my first term, my large project was collaborating on the pioneering of crack propagation studies at Kratos by designing specialized test fixtures and developing a data interpreter. This provided engineers with accurate results and tools to improve future tests. With all of these projects I had to draft technical drawings that accommodated the customer’s desired test samples within the provided materials, enabling efficient fabrication by the internal machine shop, ensuring on-time and project completion. In my second term, I supported the standardization and organization of test samples and their associated hardware by surveying shop technicians and engineers to ensure optimal specimens were selected. Additionally, I played a key role in the development of an internal IRAD product that cut test setup time by 50%, overseeing the entire process—from communicating with technicians and drafting technical drawings to coordinating machining and managing final assembly. </p>
-            <h3>Aerodynamics Assistant Lead Engineer: Formula SAE (Crimson Racing) (August 2022 - Present)</h3>
-            I currently on the school's FSAE chapter, where I served as the Aerodynamics Assistant Lead and the Senior Engineer for the Rear Wing of our CR25 car, which is highlighted in the projects section. Previously, I held the position of Side Aero Senior Engineer for our CR22B car.
+  <main>
 
-            Through my experiences in FSAE, I have developed valuable communication skills while collaborating with a team of engineers. I have learned the importance of compromise to achieve our design goals, ensuring that all components work seamlessly together. Additionally, I have been involved in the manufacture of over 20 carbon fiber parts, overseeing the process from mold design to the final product.
-         
-            One of the most rewarding aspects of my role is the opportunity to help mentor and support the next generation of engineers.
-            <h3>Residential Advisor: University of Alabama Housing & Residential Communities (August 2023 - December 2024)</h3>
-            <p>I serve as a residential advisor to 40 freshmen this year and served 40 the year previous. I organized, planned, and ran 9 community-building events including an ice cream social, dodgeball tournament, and game nights. I also connected with residents and worked to build a sense of community that allowed them to adjust to college in a healthy manner.</p>
-            <h3>Photographer: The University of Alabama Recreation Marketing Deparment (August 2023 - December 2024)</h3>
+    <section id="about">
+      <h2>About Me</h2>
+      <p>I am Lake Larson, an Eagle Scout and senior in Aerospace Engineering at The University of Alabama — Roll Tide! I am actively seeking an internship for the summer of 2025. My passions lie in materials science and computer simulations (CFD), and I have hands-on experience in both areas, as highlighted below.</p>
+      <p>I’m also an active member of my school's Formula SAE chapter, where I spend most of my free time designing and manufacturing the next year’s car. Please feel free to explore my website, and don’t hesitate to reach out if you have any questions!</p>
+    </section>
 
-                
-        </section>
-        <section id="projects" class="projects">
-            <h2>Key Projects</h2>
-            <div class="project-item">
-                <h3>CR25 Rear Wing Design</h3>
-                <p>Increased the efficiency of the rear wing by 11% and decreased the weight by almost 1.5 lbs. This was done by doing iterative design using CFD and SolidWorks to help reduced the pressure gradient and therefore reduce the vortices coming off the endplate. This helped reduce the induced drag and therefore increased efficiency.</p>
-                <img src="img/BW streamlines.png" alt="stream lines" width="500" height="300" title="CFD">
-                <p>Velocity streamlines off the Rear Wing.</p>
-                <img src="img/Vortex Mag.png" alt="vortex" width="500" height="300" title="CFD">
-                <p>Vortices magnitude coming off the Rear Wing.</p>
-                <img src="img/CFD pressure grad.png" alt="pressure" width="500" height="300" title="CFD">
-                <p>Pressure gradient used to determine Rear Wing trim.</p>
-            </div>
-            <div class="project-item">
-                <h3>CR22 Side Aero Design</h3>
-                <p>Did the first iterations of side aero for Crimson Racing. Through this, I got introduced to CFD and SolidWorks and how to use them for iterative design. This design laid the ground work for later side aero engineers </p>
-            </div>
-             <div class="project-item">
-                <h3>Glider Project</h3>
-                <p> Freshman year I made a model glider based on set parameters in my intro to Engineering class. The glider successfully carried 24 quarters 40.3 feet. This project was my first introduction to a real engineering problem and was when I knew this is what I wanted to do with my life. The wing construction is something worth highlighting, it was constructed using 3d printed ribs that were designed by importing an airfoil from Airfoil Tools into Solidworks and a slot was added for the spar. They were then 3d printed, mounted to a balsa wood spar, and covered in a paper skin to save weight.  </p>
-                <img src="img/glider1.JPG" alt="Glider flying" width="300" height="400" title="glider">
-                <p>Overhead image of the glider</p>
-                <img src="img/glider3.JPG" alt="Glider flying" width="300" height="400" title="glider">
-                <p>Wing of the glider.</p>
-                <img src="img/glider2.JPG" alt="Glider flying" width="300" height="400" title="glider">
-                <p>Tail of the glider.</p>
-            </div>
-            <div class="project-item">
-                <h3>Python Dive Calculator</h3>
-                <p> Made a scuba dive calculator for my final Project in my intro to Python coding class. It takes various inputs such as air tank pressure and desired depth and calculates if and how long you can explore at said depth while still having enought air to surface safely.</p>
-                <a href="https://github.com/lakelarson/Dive_calc.git" target="_blank">Dive Calculator</a>
-               
-            </div>
-            <div class="project-item">
-                <h3>Flag Deposit Box</h3>
-                <p>Planned, got materials donated, and managed the troop while designating tasks for my Eagle Scout project. I also had to get the placement of the box approved by the church committee. This flag box is still in use today and has about 30 flags depostied a month that are properly retired. 
-                </p>
-                <img src="img/FB Front.JPEG" alt="front" width="300" height="400" title="FB">
-                <p>Front of flag deposit box</p>
-                <img src="img/FB Back.JPEG" alt="back" width="300" height="400" title="FB">
-                <p>Back of flag deposit box</p>
-            </div>
-        </section>
+    <section id="experience">
+      <h2>Professional Experience</h2>
 
-        <section id="education" class="education">
-            <h2>Education</h2>
-            <p><strong>Bachelor of Science in Aerospace Engineering</strong> - University of Alabama, May 2027</p>
-            <img src="img/Bamalogo.png" alt="vortex" width="600" height="152" title="bamalogo">
-        </section>
+      <h3>Flight Test Structures and Dynamics Intern — Lockheed Martin RMS (Sikorsky)</h3>
+      <p>Currently an intern at Sikorsky’s flight test facility in Jupiter, FL, where I assist in processing and analyzing flight test data to extract key performance metrics.</p>
 
-        <section id="skills" class="skills">
-            <h2>Skills</h2>
-            <ul>
-                <li>CFD (Ansys)</li>
-                <li>FEA (SolidWorks and Abaqus)</li>
-                <li>CAD</li>
-                <li>SolidWorks</li>
-                <li>Project Management</li>
-                <li>Python</li>
-                <li>MATLAB</li>
-                <li>HTML</li>
-                <li>LaTex</li>
-                <li>3D printing</li>
-                <li>Composites Manufacturing</li>
-                <li>Additive Manufacturing</li>
-                <li>Creo</li>
-                <li>Excel</li>
-                <li>Paraview</li>
-                <li>Iterative Design</li>
-                <li>Catia</li>
-                <li>Data Analysis</li>
-                <li>Technical Reporting</li>
-            </ul>
-        </section>
+      <h3>Thermo-Structural Systems Co-op — Kratos Defense & Security Solutions (May 2024 – May 2025)</h3>
+      <p>I design, conduct, monitor, and troubleshoot hundreds of material property tests to meet customers’ data requirements, ensuring precise results that align with high industry standards.</p>
+      <p>During my first term, I collaborated on pioneering crack propagation studies by designing specialized test fixtures and developing a data interpreter. This provided engineers with accurate results and tools to improve future testing.</p>
+      <p>Across these projects, I drafted technical drawings that accommodated customer test sample specifications within the provided materials, enabling efficient fabrication by our internal machine shop and ensuring on-time project completion.</p>
+      <p>In my second term, I supported the standardization and organization of test samples and associated hardware by surveying shop technicians and engineers to ensure optimal specimens were selected. I also played a key role in developing an internal IRAD product that reduced test setup time by 50%, overseeing the entire process — from communicating with technicians and drafting technical drawings to coordinating machining and managing final assembly.</p>
 
-        <section id="contact" class="contact">
-            <h2>Contact me</h2>
-            <p>I look foward to the opportunity to collaborate with you! </p>
-            <div style="font-family: Arial, sans-serif; line-height: 1.6; margin-top: 20;">
-                <p>
-                    <strong>Email:</strong> <a href="mailto:ldlarson@crimson.ua.edu">ldlarson@crimson.ua.edu</a><br>
-                    <strong>Phone:</strong> <a href="tel:+18654419627">(865)-441-9627</a><br>
-                    <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/lake-larson" target="_blank">www.linkedin.com/in/lake-larson</a>
-                </p>
-            </div>
-        </section>
+      <h3>Aerodynamics Assistant Lead Engineer — Formula SAE (Crimson Racing) (August 2022 – Present)</h3>
+      <p>I currently serve as the Aerodynamics Assistant Lead and Senior Engineer for the Rear Wing of our CR25 car (featured in the Projects section). Previously, I was the Side Aero Senior Engineer for our CR22B car.</p>
+      <p>Through my involvement in FSAE, I’ve developed strong communication and collaboration skills. I’ve learned the importance of compromise in achieving design goals and ensuring system integration across subsystems. I have also helped manufacture over 20 carbon fiber parts, overseeing the process from mold design to final production.</p>
+      <p>One of the most rewarding aspects of my role is mentoring and supporting the next generation of engineers.</p>
 
-        <!-- script for welcome box -->
-        <script>
-            const texts = ["Hello", "My name is Lake Larson", "I make race cars", "Welcome to my website :)"];
-            let currentTextIndex = 0;
-            let currentCharIndex = 0;
-            let deleting = false;
-            const typingSpeed = 30;
-            const deletingSpeed = 15;
-            const pauseBetweenTexts = 1100;
+      <h3>Residential Advisor — University of Alabama Housing & Residential Communities (August 2023 – December 2024)</h3>
+      <p>I serve as a Residential Advisor to 40 freshmen this year, and I served 40 residents the previous year. I have planned and led 9 community-building events, including an ice cream social, a dodgeball tournament, and game nights. I work closely with residents to help build a supportive community that allows them to adjust to college life in a healthy, positive way.</p>
 
-            const outputElement = document.getElementById('output');
-            const commandPrompt = document.getElementById('commandPrompt');
-        
-            function typeText() {
-                // Only show the cursor on the current typing line
-                let currentLine = "> " + texts[currentTextIndex].substring(0, currentCharIndex);
-                if (currentCharIndex < texts[currentTextIndex].length) {
-                    outputElement.innerHTML = currentLine + '<span id="cursor">|</span>';
-                } else {
-                    outputElement.innerHTML = currentLine;
-                }
+      <h3>Photographer — The University of Alabama Recreation Marketing Department (August 2023 – December 2024)</h3>
+      <p>I photograph events and promotional material for the university’s recreation department, contributing to marketing campaigns through high-quality visual content.</p>
+    </section>
 
-                if (!deleting && currentCharIndex < texts[currentTextIndex].length) {
-                    currentCharIndex++;
-                    setTimeout(typeText, typingSpeed);
-                } else if (!deleting && currentCharIndex === texts[currentTextIndex].length) {
-                    if (currentTextIndex < texts.length - 1) {
-                        setTimeout(() => {
-                            deleting = true;
-                            typeText();
-                        }, pauseBetweenTexts);
-                    } else {
-                        document.getElementById('cursor').style.display = 'none';
-                    }
-                } else if (deleting && currentCharIndex > 0) {
-                    currentCharIndex--;
-                    setTimeout(typeText, deletingSpeed);
-                } else if (deleting && currentCharIndex === 0) {
-                    deleting = false;
-                    currentTextIndex++;
-                    setTimeout(typeText, typingSpeed);
-                }
-            }
-            window.onload = typeText;
-        </script>
-    </body>
+    <section id="projects">
+      <h2>Key Projects</h2>
+
+      <h3>CR25 Rear Wing Design</h3>
+      <p>Increased the efficiency of the rear wing by 11% and reduced its weight by nearly 1.5 lbs. This was achieved through iterative design using CFD and SolidWorks to reduce pressure gradients and minimize vortices off the endplate. The result was lower induced drag and increased aerodynamic efficiency.</p>
+
+      <h3>CR22 Side Aero Design</h3>
+      <p>Created the first iterations of side aero for Crimson Racing. This introduced me to CFD and SolidWorks, and taught me how to use them in iterative design. The work laid the foundation for future side aero development.</p>
+
+      <h3>Glider Project</h3>
+      <p>In my freshman year, I designed and built a model glider as part of my Intro to Engineering class. The glider successfully carried 24 quarters a distance of 40.3 feet.</p>
+      <p>This project marked my first experience with a real engineering challenge — and when I knew I wanted to become an engineer.</p>
+      <p>The wing construction was a highlight: I imported an airfoil from Airfoil Tools into SolidWorks, added a spar slot, 3D printed the ribs, mounted them to a balsa wood spar, and used a lightweight paper skin for covering.</p>
+
+      <h3>Python Dive Calculator</h3>
+      <p>For my final project in an Intro to Python course, I built a scuba dive calculator. The program takes various inputs such as tank pressure and desired depth, and calculates how long you can explore safely while ensuring adequate air for surfacing.</p>
+
+      <h3>Flag Deposit Box (Eagle Scout Project)</h3>
+      <p>I planned, acquired donated materials, and led my troop in building a flag deposit box. I managed task delegation and secured approval from the church committee for its placement.</p>
+      <p>The box is still in use today and averages 30 deposited flags per month, all of which are properly retired.</p>
+    </section>
+
+    <section id="education">
+      <h2>Education</h2>
+      <p><strong>Bachelor of Science in Aerospace Engineering</strong> — University of Alabama, <em>Expected May 2027</em></p>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <ul>
+        <li>CFD (Ansys)</li>
+        <li>FEA (SolidWorks, Abaqus)</li>
+        <li>CAD (SolidWorks, Creo, CATIA)</li>
+        <li>Project Management</li>
+        <li>Python</li>
+        <li>MATLAB</li>
+        <li>HTML</li>
+        <li>LaTeX</li>
+        <li>3D Printing</li>
+        <li>Composites Manufacturing</li>
+        <li>Additive Manufacturing</li>
+        <li>Excel</li>
+        <li>ParaView</li>
+        <li>Iterative Design</li>
+        <li>Data Analysis</li>
+        <li>Technical Reporting</li>
+      </ul>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <p>I look forward to the opportunity to collaborate with you!</p>
+      <ul>
+        <li><strong>Email:</strong> <a href="mailto:ldlarson@crimson.ua.edu">ldlarson@crimson.ua.edu</a></li>
+        <li><strong>Phone:</strong> <a href="tel:+18654419627">(865)-441-9627</a></li>
+        <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/lake-larson">linkedin.com/in/lake-larson</a></li>
+      </ul>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>© 2025 Lake Larson. All rights reserved.</p>
+  </footer>
+
+</body>
 </html>
