@@ -20,9 +20,14 @@
 
     <a href="javascript:void(0)"
        class="active"
-       onclick="alert('Please contact me for a copy of my resume for professional inquiries.');">
+       onclick="
+         if (confirm('Please contact me for a copy of my resume.\nClick OK to email me.')) {
+           window.location.href='mailto:ldlarson@crimson.ua.edu';
+         }
+       ">
       Resume
     </a>
+
   </nav>
 
 
@@ -190,6 +195,7 @@
         </script>
     </body>
 </html>
+
 
 
 
