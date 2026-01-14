@@ -242,3 +242,69 @@ img {
     font-size: 2em;
   }
 }
+/* Resume modal overlay */
+.resume-modal {
+    display: none; /* hidden by default */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5); /* dark overlay */
+    z-index: 2000; /* above navbar */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+/* Modal content box */
+.resume-modal-content {
+    background-color: #f0f0f0;
+    padding: 20px 30px;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 90%;
+    width: 400px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+    position: relative;
+    transform: scale(0.8); /* start smaller */
+    transition: transform 0.3s ease;
+}
+
+/* Show animation */
+.resume-modal.show {
+    opacity: 1;
+}
+
+.resume-modal.show .resume-modal-content {
+    transform: scale(1);
+}
+
+/* Close button */
+.resume-modal .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #333;
+}
+
+/* Email button */
+.resume-modal .resume-email {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.resume-modal .resume-email:hover {
+    background-color: #0056b3;
+}
