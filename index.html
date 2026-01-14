@@ -9,10 +9,14 @@
 </head>
 
 <body>
-  <div id="resumeNotice" style="display:none; padding:10px; background:#f0f0f0; border:1px solid #ccc; margin:10px 0;">
-    Please contact me for a copy of my resume for professional inquiries. 
-    <a href="mailto:ldlarson@crimson.ua.edu">Email Me</a>
-  </div>
+    <div id="resumeNotice" class="resume-modal">
+    <div class="resume-modal-content">
+        <span class="close-btn" onclick="closeResumeAlert()">&times;</span>
+        <p>Please contact me for a copy of my resume for professional inquiries.</p>
+        <a href="mailto:ldlarson@crimson.ua.edu" class="resume-email">Email Me</a>
+    </div>
+    </div>
+
 
   <nav>
     <a href="#about">About</a>
@@ -22,11 +26,7 @@
     <a href="#skills">Skills</a>
     <a href="#contact">Contact</a>
 
-    <a href="javascript:void(0)"
-       class="active"
-       onclick="document.getElementById('resumeNotice').style.display='block';">
-      Resume
-    </a>
+    <a href="#" class="active" onclick="showResumeAlert(); return false;">Resume</a>
 
 
   </nav>
@@ -193,6 +193,35 @@
                 }
             }
             window.onload = typeText;
+
+
+
+                        function showResumeAlert() {
+                const modal = document.getElementById('resumeNotice');
+                modal.style.display = 'flex';
+                // trigger animation
+                setTimeout(() => {
+                    modal.classList.add('show');
+                }, 10);
+            }
+
+            function closeResumeAlert() {
+                const modal = document.getElementById('resumeNotice');
+                modal.classList.remove('show');
+                // wait for animation to finish before hiding
+                setTimeout(() => {
+                    modal.style.display = 'none';
+                }, 300);
+            }
+
+            // Close modal if user clicks outside the box
+            window.onclick = function(event) {
+                const modal = document.getElementById('resumeNotice');
+                if (event.target === modal) {
+                    closeResumeAlert();
+                }
+            }
+
         </script>
     </body>
 </html>
